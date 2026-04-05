@@ -109,7 +109,7 @@ project-folder
 ### Clone the repository
 
 ```
-git clone <your-github-link>
+git clone https://github.com/BGanesh03/User-management
 cd project-folder
 ```
 

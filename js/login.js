@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "https://user-management-suuo.onrender.com/api";
 
 $("#loginBtn").click(function () {
     const email = $("#email").val().trim();

@@ -1,4 +1,5 @@
-const API = "http://localhost:5000/api";
+const API = "https://user-management-suuo.onrender.com/api";
+
 const token = localStorage.getItem("token");
 
 if (!token) location.href = "login.html";

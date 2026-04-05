@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | User System</title>
+    <!-- Bootstrap CSS for layout/forms -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Premium custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100 dark-theme">
+
+    <div class="glass-card shadow-lg p-5 rounded-4 auth-container">
+        <h2 class="text-center mb-4 neon-text">Create Account</h2>
+        <div id="alertBox" class="alert d-none"></div>
+
+        <form id="registerForm">
+            <div class="mb-3 input-group-custom">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control premium-input" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3 input-group-custom">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control premium-input" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-4 input-group-custom">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control premium-input" id="password" placeholder="••••••••" required>
+                <small class="text-muted">
+                Password must contain 1 uppercase, 1 number, 1 symbol (min 8 chars)
+                </small>
+            </div>
+            <button type="button" id="registerBtn" class="btn btn-primary w-100 gradient-btn rounded-pill glow-effect py-2 fw-semibold">Sign Up</button>
+        </form>
+
+        <div class="mt-4 text-center text-muted text-sm">
+            Already have an account? <a href="login.html" class="text-decoration-none accent-link fw-semibold">Log in</a>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
